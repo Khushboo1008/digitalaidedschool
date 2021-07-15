@@ -1,0 +1,18 @@
+@import "../../sass/utilities";
+
+.mission__box {
+  @include flex_layout();
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  .mission__img {
+    position: relative;
+    width: 50%;
+    & > img {
+      height: auto;
+      width: 80%;
+      object-fit: contain;
+    }
+  }
+}

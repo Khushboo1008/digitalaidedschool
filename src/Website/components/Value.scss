@@ -1,0 +1,16 @@
+@import "../../sass/utilities";
+
+.value__slider {
+  position: relative;
+  width: 90%;
+  overflow: hidden;
+  padding: 3rem 0;
+}
+.value__img {
+  text-align: center;
+  & > img {
+    display: inline;
+    width: 30rem;
+    height: auto;
+  }
+}

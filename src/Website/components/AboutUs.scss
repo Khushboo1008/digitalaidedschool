@@ -1,0 +1,18 @@
+@import "../../sass/utilities";
+@import "../../sass/variable";
+
+.about__us__box {
+  @include flex_layout();
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  .about__us__img {
+    position: relative;
+    width: 50%;
+    & > img {
+      height: auto;
+      width: 80%;
+      object-fit: contain;
+    }
+  }
+}

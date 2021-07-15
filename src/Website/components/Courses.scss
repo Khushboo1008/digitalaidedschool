@@ -1,0 +1,17 @@
+@import "../../sass/variable";
+
+.course_img {
+  width: max-content;
+  & > img {
+    width: 20rem;
+    height: auto;
+    object-fit: contain;
+  }
+}
+.courses__title {
+  color: $main;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}

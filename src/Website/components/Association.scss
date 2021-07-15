@@ -1,0 +1,16 @@
+@import "../../sass/utilities";
+
+.outcome__box {
+  position: relative;
+  @include flex_layout();
+  padding: 2rem;
+  width: 100vw;
+  & > img {
+    width: 25%;
+    height: auto;
+    object-fit: contain;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+}

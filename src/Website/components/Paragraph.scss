@@ -1,0 +1,16 @@
+$padding: 1rem !default;
+$width: 100% !default;
+
+.paragraph__container {
+  padding: $padding;
+  width: $width;
+}
+.paragraph {
+  line-break: strict;
+  font-size: 1.8rem;
+  line-height: 1.35;
+  text-align: justify;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}

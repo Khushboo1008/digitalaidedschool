@@ -1,0 +1,30 @@
+@import "../../sass/utilities";
+
+.tree__box {
+  @include flex_layout(null, null, column);
+  width: 75vw;
+  margin-top: 2.5rem;
+  .tree__text {
+    font-size: 1.6rem;
+    color: white;
+    padding: 2rem;
+    background-color: $main;
+    border-radius: 0.4rem;
+    width: 50rem;
+    &::first-word {
+      font-weight: bolder;
+    }
+
+    &:nth-child(even) {
+      background-color: $orange;
+      align-self: flex-end;
+    }
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+    & > span {
+      font-weight: bold;
+      font-size: 1.7rem;
+    }
+  }
+}

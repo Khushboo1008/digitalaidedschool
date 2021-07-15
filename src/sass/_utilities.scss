@@ -1,0 +1,16 @@
+@import "./variable";
+
+@mixin flex_layout($align: center, $justify: center, $direction: row) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+@function theme($class: false) {
+  $color: #212529;
+  @if $class == dark {
+    $color: white;
+  }
+  @return $color;
+}

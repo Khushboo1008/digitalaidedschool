@@ -1,0 +1,71 @@
+@import "../../../sass/utilities";
+@import "../../../sass/variable";
+
+.admission__wrapper {
+  width: 100vw;
+  height: 100vh;
+  padding: 3rem 0.2rem;
+  overflow-x: hidden;
+  @include flex_layout(null);
+  position: relative;
+  .admission__form {
+    padding: 3rem 5rem;
+    position: relative;
+    @include flex_layout(center, null, column);
+    width: 50%;
+    min-width: 45rem;
+    height: max-content;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
+    box-shadow: $dark_box_shadow;
+    & > button {
+      border: none;
+      border-radius: 0.3rem;
+      background-color: $orange;
+      color: white;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      font-weight: bolder;
+      font-size: 1.6rem;
+      cursor: pointer;
+    }
+  }
+  .admission__logo__img {
+    & > img {
+      width: 30rem;
+      height: auto;
+    }
+  }
+  .admission__text {
+    font-size: 1.6rem;
+    color: black;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .admission__input__field {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    & > label {
+      display: block;
+      font-size: 1.4rem;
+      color: $orange;
+      padding: 0.5rem 0;
+    }
+    & > input {
+      width: 100%;
+      height: 4.5rem;
+      border-radius: 0.5rem;
+      padding-left: 2rem;
+      border: 0.1rem solid #ccc;
+      &::placeholder {
+        color: rgb(119, 119, 119);
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .admission__privacy__policy {
+    font-size: 1.6rem;
+    text-align: center;
+    color: rgb(77, 77, 77);
+  }
+}

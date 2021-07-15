@@ -1,0 +1,59 @@
+@import "../../sass/utilities";
+@import "../../sass/variable";
+
+.main__header {
+  width: 100vw;
+  position: relative;
+  @include flex_layout(center, flex-start);
+  padding: 0 2rem;
+  height: max-content;
+  &__logo {
+    margin-right: 2rem;
+    & > img {
+      width: 27rem;
+      min-width: 15rem;
+      object-fit: contain;
+    }
+  }
+  .main__navigation {
+    position: relative;
+    width: max-content;
+    height: 7rem;
+    @include flex_layout();
+    & > ul {
+      background: $main;
+      position: relative;
+      border-radius: 3.7rem;
+      padding: 0.6rem 0.8rem;
+      width: 100%;
+      height: 100%;
+      @include flex_layout(center, space-between);
+      & > li {
+        list-style: none;
+        padding: 0 2rem;
+        border-radius: 2.7rem;
+        height: 100%;
+        transition: {
+          property: background-color;
+          duration: 0.3s;
+        }
+        display: grid;
+        place-items: center;
+        &:not(:first-child, :last-child) {
+          margin-right: 1.5rem;
+        }
+        &:last-child {
+          background-color: $orange;
+        }
+        .link {
+          text-decoration: none;
+          color: white;
+          font-size: 2rem;
+        }
+        &:hover {
+          background-color: $orange;
+        }
+      }
+    }
+  }
+}

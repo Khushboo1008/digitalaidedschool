@@ -1,0 +1,13 @@
+@import "../../sass/variable";
+
+.title {
+  display: inline-block;
+  font-size: 3.2rem;
+  color: $main;
+  font-weight: bold;
+  padding: 1rem 4rem;
+  border-bottom: 0.1rem solid #ccc;
+  margin-bottom: 1.5rem;
+  width: max-content;
+  align-self: center;
+}

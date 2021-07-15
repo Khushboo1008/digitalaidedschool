@@ -1,0 +1,26 @@
+@import "../../sass/utilities";
+
+.vision__box {
+  @include flex_layout();
+  .vision__img {
+    margin-right: 2rem;
+    border: 0.2rem solid #ccc;
+    padding: 1rem;
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .vision {
+    font-size: 1.8rem;
+    color: black;
+    border: 1px solid #ccc;
+    height: 10rem;
+    padding: 0 1rem;
+    line-height: 10rem;
+  }
+}
