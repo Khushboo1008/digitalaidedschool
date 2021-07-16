@@ -10,12 +10,11 @@ import { SLICK_SETTING } from '../helpers/SlickSetting';
 import './Value.scss'
 
 
-    
 function Value() {
     return (
         <Wrapper dir="column">
             <Title>Value</Title>
-            <Slider {...SLICK_SETTING}  className="value__slider">
+            <Slider {...SLICK_SETTING} className="value__slider">
                 <div className="value__img">
                     <img src={img2} alt="value" />
                 </div>

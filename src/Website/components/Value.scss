@@ -1,16 +1,44 @@
 @import "../../sass/utilities";
+@import "../../sass/carousel";
 
 .value__slider {
   position: relative;
-  width: 90%;
+  width: 100%;
   overflow: hidden;
   padding: 3rem 0;
 }
+
 .value__img {
   text-align: center;
   & > img {
     display: inline;
     width: 30rem;
     height: auto;
+  }
+}
+
+ul.quiz__carousel__dot {
+  display: flex !important;
+  justify-content: center;
+  transform: translateY(1rem);
+  padding: 0.5rem;
+  & > li {
+    list-style: none;
+    &.slick-active {
+      & > button {
+        box-shadow: 0 0 0 0.5rem rgba($blue, 0.6);
+      }
+    }
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+    & > button {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      border: 0.2rem solid $blue;
+      font-size: 0;
+      cursor: pointer;
+    }
   }
 }
