@@ -6,13 +6,23 @@
   position: relative;
   overflow: hidden;
   width: 100%;
+  padding: 1rem 0;
+
+  .about__desc {
+    width: 50%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
   .about__us__img {
     position: relative;
     width: 50%;
+    @media screen and (max-width: 768px) {
+      display: none !important;
+    }
     & > img {
       height: auto;
       width: 80%;
-      object-fit: contain;
     }
   }
 }

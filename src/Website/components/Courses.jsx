@@ -14,7 +14,7 @@ function Courses() {
             <Slider ref={sliderRef} {...SLICK_SETTING} style={{padding: "3rem 0"}}>
                 {COURSES().map((item, index) => {
                     return (
-                        <div className="course_img">
+                        <div key={index} className="course__img__box">
                             <img src={item.src} alt="course_image"/>
                         </div>
                     )

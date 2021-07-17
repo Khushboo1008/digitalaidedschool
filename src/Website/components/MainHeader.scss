@@ -1,18 +1,70 @@
 @import "../../sass/utilities";
 @import "../../sass/variable";
 
+.nav_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2000;
+  transition: {
+    property: background-color;
+    duration: 0.3;
+  }
+  @include flex_layout();
+}
+.nav_overlay_after_open {
+  background-color: rgba(black, 0.05);
+}
+.nav_overlay_before_close {
+  background-color: transparent;
+}
+.nav_content {
+  position: relative;
+  transform-origin: top right;
+  transform: scale(0.9) translate(2%, -2%);
+  opacity: 0;
+  transition : {
+    property: transform, opacity;
+    duration: 0.3s;
+  }
+  height: 100%;
+  width: 100%;
+}
+.nav_content_after_open {
+  position: relative;
+  opacity: 1;
+  transform: scale(1) translate(0%);
+}
+.nav_content_before_close {
+  opacity: 0;
+  transform: scale(0.9) translate(2%, -2%);
+}
+
+// ____________________________________________________________
+
 .main__header {
-  width: 100vw;
+  width: 100%;
   position: relative;
   @include flex_layout(center, flex-start);
+  @media screen and (max-width: 768px) {
+    @include flex_layout(center, space-between);
+  }
   padding: 0 2rem;
   height: max-content;
   &__logo {
     margin-right: 2rem;
     & > img {
-      width: 27rem;
-      min-width: 15rem;
-      object-fit: contain;
+      width: 25rem;
+      height: auto;
+    }
+  }
+  .menu__bar {
+    color: $orange;
+    font-size: 5rem;
+    @media screen and (min-width: 768px) {
+      display: none;
     }
   }
   .main__navigation {
@@ -20,6 +72,9 @@
     width: max-content;
     height: 7rem;
     @include flex_layout();
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
     & > ul {
       background: $main;
       position: relative;
@@ -48,11 +103,44 @@
         .link {
           text-decoration: none;
           color: white;
-          font-size: 2rem;
+          font-size: 1.7rem;
         }
         &:hover {
           background-color: $orange;
         }
+      }
+    }
+  }
+}
+.res__navigation {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: $dark;
+  @include flex_layout();
+  .close__btn {
+    font-size: 4rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+  & > ul {
+    @include flex_layout(null, null, column);
+    & > li {
+      list-style: none;
+      border-bottom: 0.1rem solid transparent;
+      width: max-content;
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+      &:hover {
+        border-bottom: 0.1rem solid $orange;
+      }
+      .res__link {
+        color: white;
+        font-size: 2rem;
       }
     }
   }

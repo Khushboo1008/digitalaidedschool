@@ -1,26 +1,37 @@
 @import "../../sass/utilities";
 
 .tree__box {
-  @include flex_layout(null, null, column);
+  @include flex_layout(center, null, column);
   width: 75vw;
   margin-top: 2.5rem;
+  padding: 1rem;
+  @media screen and (max-width: 768px) {
+    width: 100vw;
+  }
   .tree__text {
     font-size: 1.6rem;
     color: white;
     padding: 2rem;
-    background-color: $main;
     border-radius: 0.4rem;
     width: 50rem;
-    &::first-word {
-      font-weight: bolder;
+    @media screen and (max-width: 768px) {
+      width: 100%;
     }
-
+    text-indent: 0;
     &:nth-child(even) {
       background-color: $orange;
-      align-self: flex-end;
+      @media screen and (min-width: 768px) {
+        align-self: flex-end;
+      }
+    }
+    &:nth-child(odd) {
+      background-color: $main;
+      @media screen and (min-width: 768px) {
+        align-self: flex-start;
+      }
     }
     &:not(:last-child) {
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
     & > span {
       font-weight: bold;

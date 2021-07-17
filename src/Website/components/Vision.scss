@@ -2,6 +2,9 @@
 
 .vision__box {
   @include flex_layout();
+  @media screen and (max-width: 768px) {
+    @include flex_layout(center, null, column);
+  }
   .vision__img {
     margin-right: 2rem;
     border: 0.2rem solid #ccc;
@@ -12,16 +15,20 @@
     & > img {
       width: 100%;
       height: 100%;
-      object-fit: contain;
     }
   }
   .vision {
+    @media screen and (max-width: 768px) {
+      margin-top: 1.5rem;
+    }
     font-size: 1.8rem;
     color: black;
     border: 0.2rem solid #ccc;
     height: 10rem;
-    padding: 0 1rem;
-    line-height: 10rem;
+    padding: 2rem;
+    @media screen and (max-width: 768px) {
+      height: max-content;
+    }
     margin: 0;
   }
 }

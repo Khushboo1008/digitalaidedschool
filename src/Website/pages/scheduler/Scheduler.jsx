@@ -1,6 +1,6 @@
 import React, { useState, Fragment, useRef, useEffect} from 'react'
 import { useHistory, useLocation } from 'react-router-dom';
-import das from '../../assets/das.png'
+import das from '../../assets/das.webp'
 import './Scheduler.scss'
 
 const d = new Date();

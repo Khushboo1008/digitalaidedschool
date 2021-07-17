@@ -1,11 +1,16 @@
 @import "../../sass/variable";
+@import "../../sass/utilities";
+@import "../../sass/carousel";
 
-.course_img {
-  width: max-content;
+.courses__box {
+  @include flex_layout(null, null, column);
+}
+.course__img__box {
+  text-align: center;
   & > img {
+    display: inline !important;
     width: 20rem;
     height: auto;
-    object-fit: contain;
   }
 }
 .courses__title {

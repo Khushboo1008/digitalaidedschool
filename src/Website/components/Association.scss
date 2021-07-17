@@ -6,11 +6,19 @@
   padding: 2rem;
   width: 100vw;
   & > img {
-    width: 25%;
+    width: 30rem;
     height: auto;
-    object-fit: contain;
     &:not(:last-child) {
       margin-right: 2rem;
+    }
+    @media screen and (max-width: 500px) {
+      width: 17rem;
+    }
+    @media screen and (max-width: 400px) {
+      width: 15rem;
+    }
+    @media screen and (max-width: 300px) {
+      width: 12rem;
     }
   }
 }

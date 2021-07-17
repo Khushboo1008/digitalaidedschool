@@ -1,2 +1,25 @@
 @import "../../sass/utilities";
 @import "../../sass/variable";
+
+.course__wrapper {
+  @include flex_layout(null, null);
+  .courses__container {
+    width: 50%;
+  }
+  .courses__desc {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .course__wrapper {
+    @include flex_layout(null, null, column);
+    .courses__desc,
+    .courses__container {
+      width: 100%;
+    }
+    .courses__desc {
+      margin-top: 1.5rem;
+    }
+  }
+}

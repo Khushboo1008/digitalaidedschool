@@ -6,4 +6,5 @@
   margin-top: 6rem;
   width: 100vw;
   padding: 3rem;
+  @include flex_layout(center, null, column);
 }

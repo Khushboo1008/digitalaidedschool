@@ -19,7 +19,7 @@ function AboutUs() {
                 <div className="about__us__img" style={style}>
                     <img src={illustration} alt="about_us"/>
                 </div>
-                <div style={style}>
+                <div className="about__desc">
                     <Paragraph data={ABOUT_DATA} style={{marginBottom: '2rem'}}/>
                     <Button>I am clicking here now</Button>
                 </div>

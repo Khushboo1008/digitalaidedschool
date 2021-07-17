@@ -7,9 +7,6 @@ import { MISION_DATA } from '../helpers/Paragraph'
 import './Mission.scss'
 
 
-const style = {
-        width: '50%',
-    }
 
 function Mission() { 
 
@@ -17,10 +14,10 @@ function Mission() {
         <Wrapper dir="column">
             <Title>Our Mission</Title>
             <div className="mission__box">
-                <div className="mission__img" style={style}>
+                <div className="mission__img">
                     <img src={mision} alt="mission"/>
                 </div>
-                <div style={style}>
+                <div className="mission__desc">
                     <Paragraph data={MISION_DATA} style={{marginBottom: '2rem'}}/>
                 </div>
             </div>

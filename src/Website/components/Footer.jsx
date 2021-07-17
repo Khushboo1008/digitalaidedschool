@@ -10,7 +10,7 @@ import "./Footer.scss"
 
 const Footer = () => {
     return (
-        <div>
+        <div className="footer__wrapper">
         <div className="footer_heading">
           <h1 className="digital">Digital</h1>
           <h1 className="aided">Aided</h1>
@@ -36,16 +36,16 @@ const Footer = () => {
           <div className="footer_inner_content">
             <h1>Contact</h1>
             <div className="contact_content">
-              <span className="contact_icon"><h1><FaTelegramPlane /></h1></span>
+              <FaTelegramPlane className="contact_icon"/>
               <p>contactus@digitalaidedschool.com</p>
             </div>
             <div className="contact_content">
-              <span className="contact_icon"><h1><TiFlagOutline /></h1></span>
+              <TiFlagOutline className="contact_icon"/>
               <p> +91 9876543210</p>
             </div>
             <div className="contact_content">
-              <span className="contact_icon"><h1>< IoLocationSharp/></h1></span>
-              <p> <strong>India</strong> <br/>Spectrum tower, Malad West, Maharashtra Mumbai 400054</p>
+              <IoLocationSharp className="contact_icon"/>
+              <p> <span>India</span> Spectrum tower, Malad West,<br /> Maharashtra Mumbai 400054</p>
             </div>
           </div>
             </div>

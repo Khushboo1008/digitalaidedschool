@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import das from '../../assets/das.png'
+import das from '../../assets/das.webp'
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import { ADMISSION_FORM_SCHEMA } from '../../helpers/Admission';

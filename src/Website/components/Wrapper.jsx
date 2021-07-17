@@ -1,16 +1,10 @@
 import React from 'react';
 import './Wrapper.scss';
 
-function Wrapper({ children, al = "center", js = "center", dir = "row" }) {
-    
-    const style = {
-        display: "flex",
-        alignItems: al,
-        justifyContent: js,
-        flexDirection: dir
-    }
+function Wrapper({ children, className}) {
+       
     return (
-        <section style={style} className="section__wrapper">
+        <section className={`section__wrapper ${className}`}>
             {children}
         </section>
     )

@@ -9,5 +9,20 @@ export const SLICK_SETTING = {
         easing: "ease-out",
         autoplay: true,
      autoplaySpeed: 2000,
-         pauseOnHover : false,
+    pauseOnHover: false,
+    lazyload: true,
+         responsive: [
+        {
+          breakpoint: 320,
+          settings: { slidesToShow: 1, slidesToScroll: 1 }
+        },
+        {
+          breakpoint: 768,
+          settings: { slidesToShow: 2, slidesToScroll: 2 }
+        },
+        {
+          breakpoint: 1024,
+          settings: { slidesToShow: 3, slidesToScroll: 3 }
+        }
+      ]
 }

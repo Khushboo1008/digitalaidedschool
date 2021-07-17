@@ -7,19 +7,16 @@ import Wrapper from '../components/Wrapper'
 import './CoursesOffered.scss';
 
 
-const style = {
-    width : "50%"
-}
 
 function CoursesOffered() {
 
 
     return (
-        <Wrapper js={null}>
-            <div style={style}>
+        <Wrapper className="course__wrapper">
+            <div className="courses__container" >
                 <Courses />
             </div>
-            <div style={style}>
+            <div className="courses__desc">
                 <Paragraph data={COURSE} style={{marginBottom : '2rem'}}/>
                 <Button to="/admission"> Study now! Pay later</Button>
             </div>

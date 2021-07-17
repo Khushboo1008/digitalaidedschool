@@ -6,10 +6,9 @@ $width: 100% !default;
   width: $width;
 }
 .paragraph {
-  line-break: strict;
   font-size: 1.8rem;
-  line-height: 1.35;
   text-align: justify;
+  text-indent: 0;
   &:not(:last-child) {
     margin-bottom: 2rem;
   }
