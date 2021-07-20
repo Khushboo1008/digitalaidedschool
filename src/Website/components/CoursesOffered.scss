@@ -9,6 +9,12 @@
   .courses__desc {
     width: 50%;
   }
+  &.active {
+    @include flex_layout(null, null, column);
+    .courses__desc {
+      width: 100%;
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
