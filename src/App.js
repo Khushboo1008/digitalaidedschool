@@ -18,7 +18,7 @@ function App() {
               <Route path="/scheduler" exact>
                 <Scheduler/>
               </Route>
-              <Route path="/business-market" exact>
+              <Route path="/digital-marketing" exact>
                 <Market/>
               </Route>
         </Switch>

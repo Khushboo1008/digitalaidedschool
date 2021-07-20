@@ -18,7 +18,7 @@ function MainHeader() {
                         <Link to="/" className="link">Courses</Link>
                     </li>
                     <li className="nav__link">
-                        <Link to="/business-market" className="link">Business Marketing</Link>
+                        <Link to="/digital-marketing" className="link">Business Marketing</Link>
                     </li>
                     <li className="nav__link">
                         <Link to="/" className="link">Educational Institutions</Link>
