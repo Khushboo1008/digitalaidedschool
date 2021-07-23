@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "das-web",
   "version": "0.1.0",
   "private": true,
@@ -43,5 +44,29 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+=======
+  "name": "next-test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "11.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.2.0",
+    "react-modal": "^3.14.3",
+    "react-slick": "^0.28.1",
+    "sass": "^1.35.2",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "eslint": "7.31.0",
+    "eslint-config-next": "11.0.1"
+>>>>>>> fc115276484f15d5b747be848ae329d030b51746
   }
 }
